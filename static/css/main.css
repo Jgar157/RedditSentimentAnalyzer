@@ -14,15 +14,11 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-.tasklist {
-    margin-left: auto;
-    margin-right: auto;
-}
-
 tr:nth-child(even) {
     background-color: #f2f2f2;
 }
-tr:hover{
+
+tr:hover {
     background-color: lightpink;
 }
 
