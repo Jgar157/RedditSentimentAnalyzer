@@ -3,9 +3,7 @@
 """
 import praw
 import random
-
-
-# from Neural import NeuralAnalyzer as na
+from Neural import NeuralAnalyzer as na
 
 
 def main(subreddit_name: str) -> dict:
