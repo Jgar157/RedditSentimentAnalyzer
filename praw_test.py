@@ -3,6 +3,7 @@
 """
 import praw
 import random
+from Neural import NeuralAnalyzer as na
 
 
 # from Neural import NeuralAnalyzer as na
@@ -20,8 +21,8 @@ def main(subreddit_name: str) -> dict:
 
     hot_subreddit = subreddit.hot()
     x = {}
-    # hate_network = na.NeuralAnalyzer("Neural/neural_networks/hate_neural/hate_model",
-    #                                  "Neural/neural_networks/hate_neural/tokenizer.pickle")
+    hate_network = na.NeuralAnalyzer("Neural/neural_networks/hate_neural/hate_model",
+                                     "Neural/neural_networks/hate_neural/tokenizer.pickle")
     for submission in hot_subreddit:
         # predicted_value = hate_network.predict_text([submission.title])
         x.update({submission.title: random.random()})  # random represents test value for nlp
