@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route('/')
 @app.route('/index')  # multiple routes to same page
 def home():
-    return render_template('index.html', x=praw_test.main('python'))
+    return render_template('index.html', x=praw_test.main('Conservative'))
 
 
 if __name__ == '__main__':
